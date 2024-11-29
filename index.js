@@ -25,23 +25,21 @@ console.log(ternaryCheckCity(""));
 
 
 
-function switchOnCharmFromTip(a){
+function switchOnCharmFromTip(tips){
   // Write your code here!
-  
-  let reply;
-switch(true){
-  case a === "generous" :
-    reply ='Thank you so much.';
+switch(tips){
+  case "generous" :
+    return "Thank you so much.";
     break;
 
-    case a === "not as generous" :
-      reply = "Thank you.";
+    case "not as generous" :
+      return "Thank you.";
     break;
 
     default :
-          reply = "Bye. ";
+          return "Bye. ";
           break;
 }
   return reply;
 }
-console.log(switchOnCharmFromTip())
+console.log(switchOnCharmFromTip(""))
